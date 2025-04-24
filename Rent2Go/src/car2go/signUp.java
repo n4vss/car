@@ -4,7 +4,6 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.IOException;
-import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -15,10 +14,8 @@ import org.json.simple.parser.ParseException;
 
 public class signUp extends javax.swing.JFrame {
 
-    //Variables to store username and password
-    private static String username, password;
     //File path for JSON
-    private static String filepath = "C:\\Users\\User\\Downloads\\Java-Rice-main\\Java-Rice-main\\Rent2Go\\src\\car2go\\car2go.json";
+    private static String filepath = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
     private static JSONParser jsonParser = new JSONParser();
     private static JSONObject record = new JSONObject();
     private static JSONArray userlist = new JSONArray();
@@ -55,50 +52,52 @@ public class signUp extends javax.swing.JFrame {
         setTitle("Car2Go");
         setUndecorated(true);
 
-        jPanel1.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel1.setBackground(new java.awt.Color(255, 255, 255));
+        jPanel1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel3.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(500, 100));
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        jLabel5.setFont(new java.awt.Font("Gtek Technology", 1, 50)); // NOI18N
         jLabel5.setForeground(new java.awt.Color(48, 53, 57));
-        jLabel5.setText("Sign Up");
+        jLabel5.setText("sign up");
 
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(213, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(121, 121, 121)
                 .addComponent(jLabel5)
-                .addGap(197, 197, 197))
+                .addContainerGap(131, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(41, Short.MAX_VALUE)
+                .addContainerGap(34, Short.MAX_VALUE)
                 .addComponent(jLabel5)
-                .addGap(27, 27, 27))
+                .addGap(16, 16, 16))
         );
 
-        jPanel1.add(jPanel3);
+        jPanel1.add(jPanel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 5, -1, -1));
 
-        jPanel6.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setPreferredSize(new java.awt.Dimension(500, 400));
 
-        lblEmail.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        lblEmail.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblEmail.setForeground(new java.awt.Color(48, 53, 57));
         lblEmail.setText("Email:");
 
-        TfEmail.setBorder(null);
+        TfEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        lblPswd.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        lblPswd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPswd.setForeground(new java.awt.Color(48, 53, 57));
         lblPswd.setText("Password:");
 
-        Pswd.setBorder(null);
+        Pswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        btnCreateAcc.setBackground(new java.awt.Color(0, 188, 240));
+        btnCreateAcc.setBackground(new java.awt.Color(102, 0, 0));
+        btnCreateAcc.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         btnCreateAcc.setForeground(new java.awt.Color(255, 255, 255));
         btnCreateAcc.setText("Create Account");
         btnCreateAcc.addActionListener(new java.awt.event.ActionListener() {
@@ -107,18 +106,21 @@ public class signUp extends javax.swing.JFrame {
             }
         });
 
-        lblCPswd.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        lblCPswd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblCPswd.setForeground(new java.awt.Color(48, 53, 57));
         lblCPswd.setText("Confirm Password:");
 
-        lblName.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
+        lblName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblName.setForeground(new java.awt.Color(48, 53, 57));
         lblName.setText("Name:");
 
-        TfName.setBorder(null);
+        TfName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
+        TfName.setAlignmentX(1.0F);
+        TfName.setAlignmentY(1.0F);
+        TfName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        checkPswrd.setBackground(new java.awt.Color(255, 229, 86));
-        checkPswrd.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        checkPswrd.setBackground(new java.awt.Color(255, 255, 255));
+        checkPswrd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         checkPswrd.setForeground(new java.awt.Color(48, 53, 57));
         checkPswrd.setText("Show Password");
         checkPswrd.setBorder(javax.swing.BorderFactory.createMatteBorder(1, 1, 1, 1, new java.awt.Color(48, 53, 57)));
@@ -128,7 +130,7 @@ public class signUp extends javax.swing.JFrame {
             }
         });
 
-        CPswd.setBorder(null);
+        CPswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -141,13 +143,13 @@ public class signUp extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(TfEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
                         .addComponent(btnCreateAcc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(TfName)
                         .addComponent(Pswd)
                         .addComponent(CPswd)
                         .addComponent(lblEmail)
                         .addComponent(lblName)
                         .addComponent(lblPswd)
-                        .addComponent(lblCPswd)))
+                        .addComponent(lblCPswd)
+                        .addComponent(TfName, javax.swing.GroupLayout.Alignment.TRAILING)))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -170,23 +172,23 @@ public class signUp extends javax.swing.JFrame {
                 .addComponent(CPswd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(checkPswrd)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 32, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
                 .addComponent(btnCreateAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
 
-        jPanel1.add(jPanel6);
+        jPanel1.add(jPanel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 110, -1, -1));
 
-        jPanel7.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setPreferredSize(new java.awt.Dimension(500, 50));
 
-        jLabel7.setFont(new java.awt.Font("Sans Serif Collection", 0, 14)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(48, 53, 57));
         jLabel7.setText("Already have an account?");
 
         jLabel1.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 188, 240));
+        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 0));
         jLabel1.setText("Sign In");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -203,7 +205,7 @@ public class signUp extends javax.swing.JFrame {
                 .addComponent(jLabel7)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addContainerGap(153, Short.MAX_VALUE))
+                .addContainerGap(175, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -215,11 +217,11 @@ public class signUp extends javax.swing.JFrame {
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
 
-        jPanel1.add(jPanel7);
+        jPanel1.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 515, -1, -1));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        jPanel2.setBackground(new java.awt.Color(0, 188, 240));
+        jPanel2.setBackground(new java.awt.Color(102, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(300, 600));
 
         exit.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -237,14 +239,14 @@ public class signUp extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 245, Short.MAX_VALUE)
-                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 55, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 277, Short.MAX_VALUE)
+                .addComponent(exit))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(exit)
-                .addGap(0, 552, Short.MAX_VALUE))
+                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 573, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.LINE_END);

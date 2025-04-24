@@ -36,7 +36,7 @@ public class adminUsers extends javax.swing.JFrame {
     }
 
     private static String imagePath; // Stores path of the selected image
-    private static String filepath = "C:\\Users\\User\\Downloads\\Java-Rice-main\\Java-Rice-main\\Rent2Go\\src\\car2go\\car2go.json";
+    private static String filepath = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
     private static JSONParser jsonParser = new JSONParser();
     private static JSONArray users = new JSONArray();
     private static JSONObject record = new JSONObject();
@@ -101,10 +101,10 @@ public class adminUsers extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
 
         lblManageUsers.setBackground(new java.awt.Color(255, 255, 255));
-        lblManageUsers.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        lblManageUsers.setFont(new java.awt.Font("Gtek Technology", 1, 50)); // NOI18N
         lblManageUsers.setForeground(new java.awt.Color(255, 255, 255));
         lblManageUsers.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblManageUsers.setText("Manage Users");
+        lblManageUsers.setText("manage users");
 
         jPanel9.setBackground(new java.awt.Color(48, 53, 57));
         jPanel9.setPreferredSize(new java.awt.Dimension(300, 300));
@@ -117,6 +117,7 @@ public class adminUsers extends javax.swing.JFrame {
         });
 
         lblAddress.setBackground(new java.awt.Color(255, 255, 255));
+        lblAddress.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblAddress.setForeground(new java.awt.Color(255, 255, 255));
         lblAddress.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblAddress.setText("Address:");
@@ -124,6 +125,7 @@ public class adminUsers extends javax.swing.JFrame {
         lblAddress.setPreferredSize(new java.awt.Dimension(100, 30));
 
         lblDateofBirth.setBackground(new java.awt.Color(255, 255, 255));
+        lblDateofBirth.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblDateofBirth.setForeground(new java.awt.Color(255, 255, 255));
         lblDateofBirth.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblDateofBirth.setText("Date of Birth");
@@ -131,6 +133,7 @@ public class adminUsers extends javax.swing.JFrame {
         lblDateofBirth.setPreferredSize(new java.awt.Dimension(100, 30));
 
         lblPhoneNumber.setBackground(new java.awt.Color(255, 255, 255));
+        lblPhoneNumber.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPhoneNumber.setForeground(new java.awt.Color(255, 255, 255));
         lblPhoneNumber.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPhoneNumber.setText("Phone Number:");
@@ -145,6 +148,7 @@ public class adminUsers extends javax.swing.JFrame {
         });
 
         lblPassword.setBackground(new java.awt.Color(255, 255, 255));
+        lblPassword.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPassword.setForeground(new java.awt.Color(255, 255, 255));
         lblPassword.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPassword.setText("Password");
@@ -154,6 +158,7 @@ public class adminUsers extends javax.swing.JFrame {
         tfPassword.setPreferredSize(new java.awt.Dimension(150, 30));
 
         lblEmail.setBackground(new java.awt.Color(255, 255, 255));
+        lblEmail.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblEmail.setForeground(new java.awt.Color(255, 255, 255));
         lblEmail.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblEmail.setText("Email:");
@@ -168,6 +173,7 @@ public class adminUsers extends javax.swing.JFrame {
         });
 
         lblName.setBackground(new java.awt.Color(255, 255, 255));
+        lblName.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblName.setForeground(new java.awt.Color(255, 255, 255));
         lblName.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblName.setText("Name:");
@@ -177,6 +183,7 @@ public class adminUsers extends javax.swing.JFrame {
         tfName.setPreferredSize(new java.awt.Dimension(150, 30));
 
         lblGender.setBackground(new java.awt.Color(255, 255, 255));
+        lblGender.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblGender.setForeground(new java.awt.Color(255, 255, 255));
         lblGender.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblGender.setText("Gender:");
@@ -185,6 +192,7 @@ public class adminUsers extends javax.swing.JFrame {
 
         rbtnMale.setBackground(new java.awt.Color(48, 53, 57));
         Gender.add(rbtnMale);
+        rbtnMale.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         rbtnMale.setForeground(new java.awt.Color(255, 255, 255));
         rbtnMale.setText("Male");
         rbtnMale.setPreferredSize(new java.awt.Dimension(70, 30));
@@ -196,6 +204,7 @@ public class adminUsers extends javax.swing.JFrame {
 
         rbtnFemale.setBackground(new java.awt.Color(48, 53, 57));
         Gender.add(rbtnFemale);
+        rbtnFemale.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         rbtnFemale.setForeground(new java.awt.Color(255, 255, 255));
         rbtnFemale.setText("Female");
         rbtnFemale.setPreferredSize(new java.awt.Dimension(70, 30));
@@ -288,6 +297,7 @@ public class adminUsers extends javax.swing.JFrame {
         image.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         image.setPreferredSize(new java.awt.Dimension(300, 300));
 
+        btnInsertImg.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         btnInsertImg.setText("Insert Image");
         btnInsertImg.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -313,12 +323,13 @@ public class adminUsers extends javax.swing.JFrame {
                 .addComponent(image, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(18, 18, 18)
                 .addComponent(btnInsertImg, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addContainerGap(39, Short.MAX_VALUE))
         );
 
         jPanel11.setBackground(new java.awt.Color(48, 53, 57));
         jPanel11.setPreferredSize(new java.awt.Dimension(300, 300));
 
+        btnAdd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         btnAdd.setText("Add");
         btnAdd.setPreferredSize(new java.awt.Dimension(200, 50));
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
@@ -327,6 +338,7 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
+        btnUpdate.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.setPreferredSize(new java.awt.Dimension(200, 50));
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -335,6 +347,7 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
+        btnDelete.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         btnDelete.setText("Delete");
         btnDelete.setPreferredSize(new java.awt.Dimension(200, 50));
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -343,6 +356,7 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
+        btnClear.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         btnClear.setText("Clear");
         btnClear.setPreferredSize(new java.awt.Dimension(200, 50));
         btnClear.addActionListener(new java.awt.event.ActionListener() {
@@ -391,6 +405,7 @@ public class adminUsers extends javax.swing.JFrame {
             }
         ));
         jTable1.setPreferredSize(new java.awt.Dimension(980, 250));
+        jTable1.setRowHeight(50);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);
@@ -402,42 +417,41 @@ public class adminUsers extends javax.swing.JFrame {
         jPanel1.setLayout(jPanel1Layout);
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(jPanel1Layout.createSequentialGroup()
+                .addGap(25, 25, 25)
+                .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(18, 18, 18)
+                .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(20, 20, 20)
+                .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(21, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addGap(0, 0, Short.MAX_VALUE)
+                .addComponent(lblManageUsers)
+                .addGap(215, 215, 215))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblManageUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(290, 290, 290))
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, 296, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(18, 18, 18)
-                        .addComponent(jPanel10, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 950, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 950, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(20, 20, 20)
                 .addComponent(lblManageUsers, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(20, 20, 20)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE)
+                    .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE)
                     .addComponent(jPanel10, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 306, Short.MAX_VALUE))
-                .addGap(49, 49, 49)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(75, 75, 75))
+                    .addComponent(jPanel9, javax.swing.GroupLayout.DEFAULT_SIZE, 327, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 255, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(56, 56, 56))
         );
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        jPanel2.setBackground(new java.awt.Color(0, 188, 240));
+        jPanel2.setBackground(new java.awt.Color(102, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(1280, 80));
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -451,7 +465,7 @@ public class adminUsers extends javax.swing.JFrame {
         });
 
         logo.setBackground(new java.awt.Color(255, 255, 255));
-        logo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        logo.setFont(new java.awt.Font("Trinos Solid", 1, 28)); // NOI18N
         logo.setForeground(new java.awt.Color(255, 255, 255));
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setText("car2go");
@@ -467,23 +481,23 @@ public class adminUsers extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                 .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 300, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 930, Short.MAX_VALUE)
-                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 955, Short.MAX_VALUE)
+                .addComponent(exit))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addComponent(logo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 80, Short.MAX_VALUE)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(exit)
-                .addContainerGap(36, Short.MAX_VALUE))
-            .addComponent(logo, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 0, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
-        jPanel3.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setPreferredSize(new java.awt.Dimension(300, 720));
 
-        jPanel4.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
         jPanel4.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -499,10 +513,10 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 19)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("Home");
+        jLabel14.setText("DASHBOARD");
         jLabel14.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -522,7 +536,7 @@ public class adminUsers extends javax.swing.JFrame {
                 .addGap(25, 25, 25))
         );
 
-        jPanel5.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel5.setForeground(new java.awt.Color(255, 255, 255));
         jPanel5.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -538,10 +552,10 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 19)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Vehicles");
+        jLabel3.setText("VEHICLES");
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -561,7 +575,7 @@ public class adminUsers extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
         jPanel6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel6.setForeground(new java.awt.Color(255, 255, 255));
         jPanel6.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -577,10 +591,10 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 19)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Users");
+        jLabel4.setText("USERS");
         jLabel4.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -600,7 +614,7 @@ public class adminUsers extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel7.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
         jPanel7.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel7.setForeground(new java.awt.Color(255, 255, 255));
         jPanel7.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -616,10 +630,10 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 19)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Bookings");
+        jLabel5.setText("BOOKINGS");
         jLabel5.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -639,7 +653,7 @@ public class adminUsers extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel8.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel8.setBackground(new java.awt.Color(0, 0, 0));
         jPanel8.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel8.setForeground(new java.awt.Color(255, 255, 255));
         jPanel8.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -655,10 +669,10 @@ public class adminUsers extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 19)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Reports");
+        jLabel6.setText("REPORTS");
         jLabel6.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -744,11 +758,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-        jPanel4.setBackground(new Color(255, 204, 0));
+        jPanel4.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel4MouseEntered
 
     private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-        jPanel4.setBackground(new Color(255, 229, 86));
+        jPanel4.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel4MouseExited
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
@@ -758,11 +772,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-        jPanel5.setBackground(new Color(255, 204, 0));
+        jPanel5.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel5MouseEntered
 
     private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-        jPanel5.setBackground(new Color(255, 229, 86));
+        jPanel5.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel5MouseExited
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
@@ -772,11 +786,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
-        jPanel6.setBackground(new Color(255, 204, 0));
+        jPanel6.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel6MouseEntered
 
     private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
-        jPanel6.setBackground(new Color(255, 229, 86));
+        jPanel6.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel6MouseExited
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
@@ -786,11 +800,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel7MouseClicked
 
     private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
-        jPanel7.setBackground(new Color(255, 204, 0));
+        jPanel7.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel7MouseEntered
 
     private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
-        jPanel7.setBackground(new Color(255, 229, 86));
+        jPanel7.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel7MouseExited
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
@@ -800,11 +814,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-        jPanel8.setBackground(new Color(255, 204, 0));
+        jPanel8.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-        jPanel8.setBackground(new Color(255, 229, 86));
+        jPanel8.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
@@ -827,7 +841,7 @@ public class adminUsers extends javax.swing.JFrame {
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
             imagePath = selectedFile.getAbsolutePath();
-            displayImage(imagePath); // Use the displayImage method
+            displayImage(imagePath);
         }
     }
 

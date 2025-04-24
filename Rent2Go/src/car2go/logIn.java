@@ -5,7 +5,6 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
-import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -17,7 +16,7 @@ import org.json.simple.parser.ParseException;
 public class logIn extends javax.swing.JFrame {
 
     //File path for JSON
-    private static final String FILE_NAME = "car2go.json";
+    private static final String FILE_NAME = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
     private static final JSONParser jsonParser = new JSONParser();
     private JSONObject record;
     private JSONArray users;
@@ -33,7 +32,6 @@ public class logIn extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         jPanel3 = new javax.swing.JPanel();
-        LblSignIn = new javax.swing.JLabel();
         jPanel6 = new javax.swing.JPanel();
         LblEmail = new javax.swing.JLabel();
         TfEmail = new javax.swing.JTextField();
@@ -41,6 +39,7 @@ public class logIn extends javax.swing.JFrame {
         Pswd = new javax.swing.JPasswordField();
         checkPswrd = new javax.swing.JCheckBox();
         BtnLogin = new javax.swing.JButton();
+        LblSignIn = new javax.swing.JLabel();
         jPanel7 = new javax.swing.JPanel();
         LblNoAcc = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
@@ -60,25 +59,15 @@ public class logIn extends javax.swing.JFrame {
         jPanel3.setBackground(new java.awt.Color(255, 255, 255));
         jPanel3.setPreferredSize(new java.awt.Dimension(500, 80));
 
-        LblSignIn.setBackground(new java.awt.Color(0, 0, 0));
-        LblSignIn.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        LblSignIn.setForeground(new java.awt.Color(48, 53, 57));
-        LblSignIn.setText("Sign In");
-
         javax.swing.GroupLayout jPanel3Layout = new javax.swing.GroupLayout(jPanel3);
         jPanel3.setLayout(jPanel3Layout);
         jPanel3Layout.setHorizontalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel3Layout.createSequentialGroup()
-                .addGap(211, 211, 211)
-                .addComponent(LblSignIn)
-                .addContainerGap(211, Short.MAX_VALUE))
+            .addGap(0, 500, Short.MAX_VALUE)
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addGap(0, 48, Short.MAX_VALUE)
-                .addComponent(LblSignIn))
+            .addGap(0, 80, Short.MAX_VALUE)
         );
 
         jPanel1.add(jPanel3);
@@ -86,24 +75,24 @@ public class logIn extends javax.swing.JFrame {
         jPanel6.setBackground(new java.awt.Color(255, 255, 255));
         jPanel6.setPreferredSize(new java.awt.Dimension(500, 400));
 
-        LblEmail.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        LblEmail.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         LblEmail.setForeground(new java.awt.Color(0, 0, 0));
         LblEmail.setText("Email:");
 
         TfEmail.setForeground(new java.awt.Color(0, 0, 0));
         TfEmail.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         TfEmail.setToolTipText("");
-        TfEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        TfEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
-        TfPswd.setFont(new java.awt.Font("Segoe UI", 0, 14)); // NOI18N
+        TfPswd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         TfPswd.setForeground(new java.awt.Color(0, 0, 0));
         TfPswd.setText("Password:");
 
         Pswd.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        Pswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
+        Pswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
 
         checkPswrd.setBackground(new java.awt.Color(255, 255, 255));
-        checkPswrd.setFont(new java.awt.Font("SansSerif", 0, 12)); // NOI18N
+        checkPswrd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         checkPswrd.setForeground(new java.awt.Color(48, 53, 57));
         checkPswrd.setText("Show Password");
         checkPswrd.setBorder(null);
@@ -113,7 +102,8 @@ public class logIn extends javax.swing.JFrame {
             }
         });
 
-        BtnLogin.setBackground(new java.awt.Color(0, 188, 240));
+        BtnLogin.setBackground(new java.awt.Color(102, 0, 0));
+        BtnLogin.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         BtnLogin.setForeground(new java.awt.Color(255, 255, 255));
         BtnLogin.setText("Log In");
         BtnLogin.setBorder(javax.swing.BorderFactory.createEmptyBorder(1, 1, 1, 1));
@@ -123,25 +113,37 @@ public class logIn extends javax.swing.JFrame {
             }
         });
 
+        LblSignIn.setBackground(new java.awt.Color(0, 0, 0));
+        LblSignIn.setFont(new java.awt.Font("Gtek Technology", 1, 50)); // NOI18N
+        LblSignIn.setForeground(new java.awt.Color(48, 53, 57));
+        LblSignIn.setText("sign in");
+
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
         jPanel6Layout.setHorizontalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(100, 100, 100)
-                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(checkPswrd)
-                    .addComponent(LblEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(TfPswd)
-                    .addComponent(Pswd)
-                    .addComponent(BtnLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-                    .addComponent(TfEmail, javax.swing.GroupLayout.Alignment.TRAILING))
+                .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(100, 100, 100)
+                        .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
+                            .addComponent(checkPswrd)
+                            .addComponent(LblEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 37, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(TfPswd)
+                            .addComponent(Pswd)
+                            .addComponent(BtnLogin, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+                            .addComponent(TfEmail, javax.swing.GroupLayout.Alignment.TRAILING)))
+                    .addGroup(jPanel6Layout.createSequentialGroup()
+                        .addGap(139, 139, 139)
+                        .addComponent(LblSignIn)))
                 .addContainerGap(100, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
             jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel6Layout.createSequentialGroup()
-                .addGap(60, 60, 60)
+                .addContainerGap()
+                .addComponent(LblSignIn)
+                .addGap(34, 34, 34)
                 .addComponent(LblEmail)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(TfEmail, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -153,7 +155,7 @@ public class logIn extends javax.swing.JFrame {
                 .addComponent(checkPswrd)
                 .addGap(18, 18, 18)
                 .addComponent(BtnLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(86, Short.MAX_VALUE))
+                .addContainerGap(69, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel6);
@@ -161,12 +163,12 @@ public class logIn extends javax.swing.JFrame {
         jPanel7.setBackground(new java.awt.Color(255, 255, 255));
         jPanel7.setPreferredSize(new java.awt.Dimension(500, 50));
 
-        LblNoAcc.setFont(new java.awt.Font("Sans Serif Collection", 0, 14)); // NOI18N
+        LblNoAcc.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         LblNoAcc.setForeground(new java.awt.Color(48, 53, 57));
         LblNoAcc.setText("Don't have an account?");
 
-        jLabel1.setFont(new java.awt.Font("SansSerif", 0, 14)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(0, 188, 240));
+        jLabel1.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(102, 0, 0));
         jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel1.setText("Sign Up");
         jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
@@ -184,7 +186,7 @@ public class logIn extends javax.swing.JFrame {
                 .addComponent(LblNoAcc)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jLabel1)
-                .addContainerGap(152, Short.MAX_VALUE))
+                .addContainerGap(176, Short.MAX_VALUE))
         );
         jPanel7Layout.setVerticalGroup(
             jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -192,14 +194,14 @@ public class logIn extends javax.swing.JFrame {
                 .addGroup(jPanel7Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(LblNoAcc)
                     .addComponent(jLabel1))
-                .addGap(0, 12, Short.MAX_VALUE))
+                .addGap(0, 35, Short.MAX_VALUE))
         );
 
         jPanel1.add(jPanel7);
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        jPanel2.setBackground(new java.awt.Color(0, 188, 240));
+        jPanel2.setBackground(new java.awt.Color(102, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(300, 600));
 
         exit.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
@@ -217,14 +219,14 @@ public class logIn extends javax.swing.JFrame {
         jPanel2Layout.setHorizontalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
-                .addGap(0, 250, Short.MAX_VALUE)
-                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 50, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(0, 277, Short.MAX_VALUE)
+                .addComponent(exit))
         );
         jPanel2Layout.setVerticalGroup(
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
-                .addComponent(exit)
-                .addGap(0, 552, Short.MAX_VALUE))
+                .addComponent(exit, javax.swing.GroupLayout.PREFERRED_SIZE, 27, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(0, 573, Short.MAX_VALUE))
         );
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.LINE_END);

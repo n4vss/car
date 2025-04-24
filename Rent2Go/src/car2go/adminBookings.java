@@ -16,7 +16,7 @@ import org.json.simple.parser.JSONParser;
 public class adminBookings extends javax.swing.JFrame {
 
     private JSONObject car2goData;
-    private final String DATA_FILE = "C:\\Users\\User\\Downloads\\Java-Rice-main\\Java-Rice-main\\Rent2Go\\src\\car2go\\car2go.json";
+    private final String DATA_FILE = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
     private DefaultTableModel tableModel;
 
     public adminBookings() {
@@ -266,10 +266,10 @@ public class adminBookings extends javax.swing.JFrame {
         jPanel1.setPreferredSize(new java.awt.Dimension(500, 500));
 
         lblManageBookings.setBackground(new java.awt.Color(255, 255, 255));
-        lblManageBookings.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
+        lblManageBookings.setFont(new java.awt.Font("Gtek Technology", 1, 50)); // NOI18N
         lblManageBookings.setForeground(new java.awt.Color(255, 255, 255));
         lblManageBookings.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblManageBookings.setText("Manage Bookings");
+        lblManageBookings.setText("manage bookings");
         lblManageBookings.setPreferredSize(new java.awt.Dimension(500, 50));
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -285,11 +285,13 @@ public class adminBookings extends javax.swing.JFrame {
         ));
         jTable1.setMinimumSize(new java.awt.Dimension(980, 300));
         jTable1.setPreferredSize(new java.awt.Dimension(980, 250));
+        jTable1.setRowHeight(50);
         jScrollPane1.setViewportView(jTable1);
 
         jPanel11.setBackground(new java.awt.Color(48, 53, 57));
         jPanel11.setPreferredSize(new java.awt.Dimension(980, 100));
 
+        btnBook.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         btnBook.setText("Book");
         btnBook.setPreferredSize(new java.awt.Dimension(150, 50));
         btnBook.addActionListener(new java.awt.event.ActionListener() {
@@ -298,6 +300,7 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        btnUpdate.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.setPreferredSize(new java.awt.Dimension(150, 50));
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
@@ -306,6 +309,7 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        btnClear.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         btnClear.setText("Clear");
         btnClear.setPreferredSize(new java.awt.Dimension(150, 50));
         btnClear.addActionListener(new java.awt.event.ActionListener() {
@@ -314,6 +318,7 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        btnDelete.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 14)); // NOI18N
         btnDelete.setText("Delete");
         btnDelete.setPreferredSize(new java.awt.Dimension(150, 50));
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
@@ -327,14 +332,14 @@ public class adminBookings extends javax.swing.JFrame {
         jPanel11Layout.setHorizontalGroup(
             jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel11Layout.createSequentialGroup()
-                .addGap(115, 115, 115)
-                .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(50, 50, 50)
-                .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(162, 162, 162)
+                .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 119, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(67, 67, 67)
+                .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(70, 70, 70)
+                .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(69, 69, 69)
+                .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 131, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel11Layout.setVerticalGroup(
@@ -342,31 +347,35 @@ public class adminBookings extends javax.swing.JFrame {
             .addGroup(jPanel11Layout.createSequentialGroup()
                 .addGap(25, 25, 25)
                 .addGroup(jPanel11Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addContainerGap(25, Short.MAX_VALUE))
+                    .addComponent(btnClear, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnDelete, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnBook, javax.swing.GroupLayout.PREFERRED_SIZE, 42, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(btnUpdate, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addContainerGap(33, Short.MAX_VALUE))
         );
 
         jPanel9.setBackground(new java.awt.Color(48, 53, 57));
         jPanel9.setPreferredSize(new java.awt.Dimension(980, 200));
 
+        lblClient.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblClient.setForeground(new java.awt.Color(255, 255, 255));
         lblClient.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblClient.setText("Client");
         lblClient.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        lblCarID.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblCarID.setForeground(new java.awt.Color(255, 255, 255));
         lblCarID.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
-        lblCarID.setText("Car ID:");
+        lblCarID.setText("Car ID");
         lblCarID.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        lblPickUpDate.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPickUpDate.setForeground(new java.awt.Color(255, 255, 255));
         lblPickUpDate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPickUpDate.setText("Pick Up Date:");
         lblPickUpDate.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        lblPickUpTime.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPickUpTime.setForeground(new java.awt.Color(255, 255, 255));
         lblPickUpTime.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPickUpTime.setText("Pick Up Time:");
@@ -379,18 +388,21 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        lblTotalPrice.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblTotalPrice.setForeground(new java.awt.Color(255, 255, 255));
         lblTotalPrice.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblTotalPrice.setText("Total Price:");
         lblTotalPrice.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        lblDropOffDate.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblDropOffDate.setForeground(new java.awt.Color(255, 255, 255));
         lblDropOffDate.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblDropOffDate.setText("Drop Off Date:");
         lblDropOffDate.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        lblDropOffTime.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblDropOffTime.setForeground(new java.awt.Color(255, 255, 255));
-        lblDropOffTime.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
+        lblDropOffTime.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
         lblDropOffTime.setText("Drop Off Time:");
         lblDropOffTime.setPreferredSize(new java.awt.Dimension(100, 30));
 
@@ -416,6 +428,7 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        carID.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         carID.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Car" }));
         carID.setPreferredSize(new java.awt.Dimension(150, 30));
         carID.addActionListener(new java.awt.event.ActionListener() {
@@ -432,6 +445,7 @@ public class adminBookings extends javax.swing.JFrame {
         totalPrice.setForeground(new java.awt.Color(255, 255, 255));
         totalPrice.setPreferredSize(new java.awt.Dimension(150, 30));
 
+        client.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         client.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select Client" }));
         client.setPreferredSize(new java.awt.Dimension(150, 30));
         client.addActionListener(new java.awt.event.ActionListener() {
@@ -440,16 +454,19 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        lblPickUpLocation.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPickUpLocation.setForeground(new java.awt.Color(255, 255, 255));
         lblPickUpLocation.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblPickUpLocation.setText("Pick Up Location");
         lblPickUpLocation.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        lblDropOffLocation.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblDropOffLocation.setForeground(new java.awt.Color(255, 255, 255));
         lblDropOffLocation.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
         lblDropOffLocation.setText("Drop Off Location");
         lblDropOffLocation.setPreferredSize(new java.awt.Dimension(100, 30));
 
+        pickUpLocation.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         pickUpLocation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Location" }));
         pickUpLocation.setPreferredSize(new java.awt.Dimension(150, 30));
         pickUpLocation.addActionListener(new java.awt.event.ActionListener() {
@@ -458,6 +475,7 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
+        dropOffLocation.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         dropOffLocation.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Choose Location" }));
         dropOffLocation.setPreferredSize(new java.awt.Dimension(150, 30));
 
@@ -488,30 +506,36 @@ public class adminBookings extends javax.swing.JFrame {
                         .addComponent(lblPickUpDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
                 .addGap(20, 20, 20)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                    .addGroup(jPanel9Layout.createSequentialGroup()
-                        .addComponent(pickUpDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(50, 50, 50)
-                        .addComponent(lblDropOffDate, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(20, 20, 20)
-                        .addComponent(DropOffDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel9Layout.createSequentialGroup()
-                        .addComponent(pickUpLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblDropOffLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(dropOffLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel9Layout.createSequentialGroup()
                         .addComponent(tfPickUpTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addComponent(lblDropOffTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(10, 10, 10)
-                        .addComponent(tfDropOffTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(lblDropOffTime, javax.swing.GroupLayout.PREFERRED_SIZE, 94, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(tfDropOffTime, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(jPanel9Layout.createSequentialGroup()
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
+                                .addComponent(pickUpDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(50, 50, 50))
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addComponent(pickUpLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
+                        .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addComponent(lblDropOffLocation, javax.swing.GroupLayout.PREFERRED_SIZE, 108, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(dropOffLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(jPanel9Layout.createSequentialGroup()
+                                .addGap(8, 8, 8)
+                                .addComponent(lblDropOffDate, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                .addGap(18, 18, 18)
+                                .addComponent(DropOffDate, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                .addContainerGap(54, Short.MAX_VALUE))
         );
         jPanel9Layout.setVerticalGroup(
             jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel9Layout.createSequentialGroup()
-                .addContainerGap(35, Short.MAX_VALUE)
+                .addContainerGap(37, Short.MAX_VALUE)
                 .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
                     .addGroup(jPanel9Layout.createSequentialGroup()
                         .addGroup(jPanel9Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -541,7 +565,7 @@ public class adminBookings extends javax.swing.JFrame {
                         .addComponent(lblPickUpLocation, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                     .addComponent(totalPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(lblTotalPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(35, 35, 35))
+                .addGap(33, 33, 33))
         );
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
@@ -549,22 +573,22 @@ public class adminBookings extends javax.swing.JFrame {
         jPanel1Layout.setHorizontalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addComponent(jPanel9, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(lblManageBookings, javax.swing.GroupLayout.PREFERRED_SIZE, 500, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(240, 240, 240))
             .addGroup(jPanel1Layout.createSequentialGroup()
                 .addGap(15, 15, 15)
                 .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 950, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(15, Short.MAX_VALUE))
             .addComponent(jPanel11, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel1Layout.createSequentialGroup()
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                .addComponent(lblManageBookings, javax.swing.GroupLayout.PREFERRED_SIZE, 618, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(151, 151, 151))
         );
         jPanel1Layout.setVerticalGroup(
             jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGap(20, 20, 20)
+                .addGap(39, 39, 39)
                 .addComponent(lblManageBookings, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(25, 25, 25)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jPanel9, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(10, 10, 10)
                 .addComponent(jPanel11, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -575,7 +599,7 @@ public class adminBookings extends javax.swing.JFrame {
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
 
-        jPanel2.setBackground(new java.awt.Color(0, 188, 240));
+        jPanel2.setBackground(new java.awt.Color(153, 0, 0));
         jPanel2.setPreferredSize(new java.awt.Dimension(1280, 80));
 
         exit.setFont(new java.awt.Font("Tahoma", 1, 36)); // NOI18N
@@ -589,7 +613,7 @@ public class adminBookings extends javax.swing.JFrame {
         });
 
         logo.setBackground(new java.awt.Color(255, 255, 255));
-        logo.setFont(new java.awt.Font("Segoe UI", 0, 24)); // NOI18N
+        logo.setFont(new java.awt.Font("Trinos Solid", 1, 26)); // NOI18N
         logo.setForeground(new java.awt.Color(255, 255, 255));
         logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         logo.setText("car2go");
@@ -618,10 +642,10 @@ public class adminBookings extends javax.swing.JFrame {
 
         getContentPane().add(jPanel2, java.awt.BorderLayout.PAGE_START);
 
-        jPanel3.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel3.setBackground(new java.awt.Color(0, 0, 0));
         jPanel3.setPreferredSize(new java.awt.Dimension(300, 720));
 
-        jPanel4.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel4.setBackground(new java.awt.Color(0, 0, 0));
         jPanel4.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel4.setForeground(new java.awt.Color(255, 255, 255));
         jPanel4.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -637,10 +661,10 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
-        jLabel14.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel14.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel14.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 20)); // NOI18N
+        jLabel14.setForeground(new java.awt.Color(255, 255, 255));
         jLabel14.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel14.setText("Home");
+        jLabel14.setText("DASHBOARD");
         jLabel14.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel4Layout = new javax.swing.GroupLayout(jPanel4);
@@ -660,7 +684,7 @@ public class adminBookings extends javax.swing.JFrame {
                 .addGap(25, 25, 25))
         );
 
-        jPanel5.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel5.setBackground(new java.awt.Color(0, 0, 0));
         jPanel5.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel5.setForeground(new java.awt.Color(255, 255, 255));
         jPanel5.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -676,10 +700,10 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
-        jLabel3.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel3.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel3.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 20)); // NOI18N
+        jLabel3.setForeground(new java.awt.Color(255, 255, 255));
         jLabel3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel3.setText("Vehicles");
+        jLabel3.setText("VEHICLES");
         jLabel3.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel5Layout = new javax.swing.GroupLayout(jPanel5);
@@ -699,7 +723,7 @@ public class adminBookings extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel6.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel6.setBackground(new java.awt.Color(0, 0, 0));
         jPanel6.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel6.setForeground(new java.awt.Color(255, 255, 255));
         jPanel6.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -715,10 +739,10 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
-        jLabel4.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel4.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel4.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 20)); // NOI18N
+        jLabel4.setForeground(new java.awt.Color(255, 255, 255));
         jLabel4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel4.setText("Users");
+        jLabel4.setText("USERS");
         jLabel4.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
@@ -738,7 +762,7 @@ public class adminBookings extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel7.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
         jPanel7.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel7.setForeground(new java.awt.Color(255, 255, 255));
         jPanel7.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -754,10 +778,10 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
-        jLabel5.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel5.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 20)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
         jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Bookings");
+        jLabel5.setText("BOOKINGS");
         jLabel5.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel7Layout = new javax.swing.GroupLayout(jPanel7);
@@ -777,7 +801,7 @@ public class adminBookings extends javax.swing.JFrame {
                 .addContainerGap(25, Short.MAX_VALUE))
         );
 
-        jPanel8.setBackground(new java.awt.Color(255, 229, 86));
+        jPanel8.setBackground(new java.awt.Color(0, 0, 0));
         jPanel8.setBorder(javax.swing.BorderFactory.createMatteBorder(0, 0, 0, 0, new java.awt.Color(0, 0, 0)));
         jPanel8.setForeground(new java.awt.Color(255, 255, 255));
         jPanel8.setPreferredSize(new java.awt.Dimension(100, 100));
@@ -793,10 +817,10 @@ public class adminBookings extends javax.swing.JFrame {
             }
         });
 
-        jLabel6.setFont(new java.awt.Font("SansSerif", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(0, 0, 0));
+        jLabel6.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 20)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Reports");
+        jLabel6.setText("REPORTS");
         jLabel6.setPreferredSize(new java.awt.Dimension(150, 50));
 
         javax.swing.GroupLayout jPanel8Layout = new javax.swing.GroupLayout(jPanel8);
@@ -817,7 +841,7 @@ public class adminBookings extends javax.swing.JFrame {
         );
 
         jLabel7.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel7.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        jLabel7.setFont(new java.awt.Font("Franklin Gothic Demi", 1, 28)); // NOI18N
         jLabel7.setForeground(new java.awt.Color(255, 255, 255));
         jLabel7.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel7.setText("LOGOUT");
@@ -835,11 +859,11 @@ public class adminBookings extends javax.swing.JFrame {
             .addComponent(jPanel6, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
             .addComponent(jPanel7, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
             .addComponent(jPanel8, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(100, 100, 100))
             .addComponent(jPanel4, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 300, Short.MAX_VALUE)
+            .addGroup(jPanel3Layout.createSequentialGroup()
+                .addGap(91, 91, 91)
+                .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 115, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
         jPanel3Layout.setVerticalGroup(
             jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -882,11 +906,11 @@ public class adminBookings extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-        jPanel4.setBackground(new Color(255, 204, 0));
+        jPanel4.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel4MouseEntered
 
     private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-        jPanel4.setBackground(new Color(255, 229, 86));
+        jPanel4.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel4MouseExited
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
@@ -896,11 +920,11 @@ public class adminBookings extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-        jPanel5.setBackground(new Color(255, 204, 0));
+        jPanel5.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel5MouseEntered
 
     private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-        jPanel5.setBackground(new Color(255, 229, 86));
+        jPanel5.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel5MouseExited
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
@@ -910,11 +934,11 @@ public class adminBookings extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
-        jPanel6.setBackground(new Color(255, 204, 0));
+        jPanel6.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel6MouseEntered
 
     private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
-        jPanel6.setBackground(new Color(255, 229, 86));
+        jPanel6.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel6MouseExited
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
@@ -924,11 +948,11 @@ public class adminBookings extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel7MouseClicked
 
     private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
-        jPanel7.setBackground(new Color(255, 204, 0));
+        jPanel7.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel7MouseEntered
 
     private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
-        jPanel7.setBackground(new Color(255, 229, 86));
+        jPanel7.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel7MouseExited
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
@@ -938,11 +962,11 @@ public class adminBookings extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-        jPanel8.setBackground(new Color(255, 204, 0));
+        jPanel8.setBackground(new Color(102, 102, 102));
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-        jPanel8.setBackground(new Color(255, 229, 86));
+        jPanel8.setBackground(new Color(0, 0, 0));
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
