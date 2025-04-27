@@ -36,7 +36,7 @@ public class adminUsers extends javax.swing.JFrame {
     }
 
     private static String imagePath; // Stores path of the selected image
-    private static String filepath = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
+    private static String filepath = "C:\\Users\\User\\Downloads\\Java-Rice-main\\Java-Rice-main\\Rent2Go\\src\\car2go\\car2go.json";
     private static JSONParser jsonParser = new JSONParser();
     private static JSONArray users = new JSONArray();
     private static JSONObject record = new JSONObject();
@@ -405,7 +405,6 @@ public class adminUsers extends javax.swing.JFrame {
             }
         ));
         jTable1.setPreferredSize(new java.awt.Dimension(980, 250));
-        jTable1.setRowHeight(50);
         jTable1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 jTable1MouseClicked(evt);
@@ -758,11 +757,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel4MouseClicked
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-        jPanel4.setBackground(new Color(102, 102, 102));
+        jPanel4.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel4MouseEntered
 
     private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-        jPanel4.setBackground(new Color(0, 0, 0));
+        jPanel4.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel4MouseExited
 
     private void jPanel5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseClicked
@@ -772,11 +771,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel5MouseClicked
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-        jPanel5.setBackground(new Color(102, 102, 102));
+        jPanel5.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel5MouseEntered
 
     private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-        jPanel5.setBackground(new Color(0, 0, 0));
+        jPanel5.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel5MouseExited
 
     private void jPanel6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseClicked
@@ -786,11 +785,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel6MouseClicked
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
-        jPanel6.setBackground(new Color(102, 102, 102));
+        jPanel6.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel6MouseEntered
 
     private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
-        jPanel6.setBackground(new Color(0, 0, 0));
+        jPanel6.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel6MouseExited
 
     private void jPanel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseClicked
@@ -800,11 +799,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel7MouseClicked
 
     private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
-        jPanel7.setBackground(new Color(102, 102, 102));
+        jPanel7.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel7MouseEntered
 
     private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
-        jPanel7.setBackground(new Color(0, 0, 0));
+        jPanel7.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel7MouseExited
 
     private void jPanel8MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseClicked
@@ -814,11 +813,11 @@ public class adminUsers extends javax.swing.JFrame {
     }//GEN-LAST:event_jPanel8MouseClicked
 
     private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-        jPanel8.setBackground(new Color(102, 102, 102));
+        jPanel8.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-        jPanel8.setBackground(new Color(0, 0, 0));
+        jPanel8.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
@@ -841,7 +840,7 @@ public class adminUsers extends javax.swing.JFrame {
         if (returnValue == JFileChooser.APPROVE_OPTION) {
             File selectedFile = fileChooser.getSelectedFile();
             imagePath = selectedFile.getAbsolutePath();
-            displayImage(imagePath);
+            displayImage(imagePath); // Use the displayImage method
         }
     }
 

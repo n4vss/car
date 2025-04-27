@@ -5,6 +5,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -16,7 +17,7 @@ import org.json.simple.parser.ParseException;
 public class logIn extends javax.swing.JFrame {
 
     //File path for JSON
-    private static final String FILE_NAME = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
+    private static final String FILE_NAME = "car2go.json";
     private static final JSONParser jsonParser = new JSONParser();
     private JSONObject record;
     private JSONArray users;
@@ -82,14 +83,14 @@ public class logIn extends javax.swing.JFrame {
         TfEmail.setForeground(new java.awt.Color(0, 0, 0));
         TfEmail.setHorizontalAlignment(javax.swing.JTextField.LEFT);
         TfEmail.setToolTipText("");
-        TfEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        TfEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         TfPswd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         TfPswd.setForeground(new java.awt.Color(0, 0, 0));
         TfPswd.setText("Password:");
 
         Pswd.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        Pswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        Pswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0)));
 
         checkPswrd.setBackground(new java.awt.Color(255, 255, 255));
         checkPswrd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N

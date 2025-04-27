@@ -116,13 +116,13 @@
                           <Group type="103" groupAlignment="0" max="-2" attributes="0">
                               <Component id="TfEmail" pref="370" max="32767" attributes="0"/>
                               <Component id="btnCreateAcc" alignment="0" max="32767" attributes="0"/>
+                              <Component id="TfName" alignment="0" max="32767" attributes="0"/>
                               <Component id="Pswd" alignment="0" max="32767" attributes="0"/>
                               <Component id="CPswd" alignment="0" max="32767" attributes="0"/>
                               <Component id="lblEmail" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="lblName" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="lblPswd" alignment="0" min="-2" max="-2" attributes="0"/>
                               <Component id="lblCPswd" alignment="0" min="-2" max="-2" attributes="0"/>
-                              <Component id="TfName" alignment="1" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                       <EmptySpace pref="65" max="32767" attributes="0"/>
@@ -149,7 +149,7 @@
                       <Component id="CPswd" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                       <Component id="checkPswrd" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace pref="49" max="32767" attributes="0"/>
+                      <EmptySpace pref="51" max="32767" attributes="0"/>
                       <Component id="btnCreateAcc" min="-2" pref="40" max="-2" attributes="0"/>
                       <EmptySpace max="-2" attributes="0"/>
                   </Group>
@@ -171,9 +171,7 @@
             <Component class="javax.swing.JTextField" name="TfEmail">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder thickness="2"/>
-                  </Border>
+                  <Border info="null"/>
                 </Property>
               </Properties>
             </Component>
@@ -191,9 +189,7 @@
             <Component class="javax.swing.JPasswordField" name="Pswd">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder thickness="2"/>
-                  </Border>
+                  <Border info="null"/>
                 </Property>
               </Properties>
             </Component>
@@ -238,13 +234,8 @@
             </Component>
             <Component class="javax.swing.JTextField" name="TfName">
               <Properties>
-                <Property name="horizontalAlignment" type="int" value="2"/>
-                <Property name="alignmentX" type="float" value="1.0"/>
-                <Property name="alignmentY" type="float" value="1.0"/>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder thickness="2"/>
-                  </Border>
+                  <Border info="null"/>
                 </Property>
               </Properties>
             </Component>
@@ -275,9 +266,7 @@
             <Component class="javax.swing.JPasswordField" name="CPswd">
               <Properties>
                 <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
-                  <Border info="org.netbeans.modules.form.compat2.border.LineBorderInfo">
-                    <LineBorder thickness="2"/>
-                  </Border>
+                  <Border info="null"/>
                 </Property>
               </Properties>
             </Component>

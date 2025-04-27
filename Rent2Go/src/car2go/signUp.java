@@ -4,6 +4,7 @@ import java.io.FileNotFoundException;
 import java.io.FileWriter;
 import java.io.FileReader;
 import java.io.IOException;
+import java.util.Scanner;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -14,8 +15,10 @@ import org.json.simple.parser.ParseException;
 
 public class signUp extends javax.swing.JFrame {
 
+    //Variables to store username and password
+    private static String username, password;
     //File path for JSON
-    private static String filepath = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
+    private static String filepath = "C:\\Users\\User\\Downloads\\Java-Rice-main\\Java-Rice-main\\Rent2Go\\src\\car2go\\car2go.json";
     private static JSONParser jsonParser = new JSONParser();
     private static JSONObject record = new JSONObject();
     private static JSONArray userlist = new JSONArray();
@@ -88,13 +91,13 @@ public class signUp extends javax.swing.JFrame {
         lblEmail.setForeground(new java.awt.Color(48, 53, 57));
         lblEmail.setText("Email:");
 
-        TfEmail.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        TfEmail.setBorder(null);
 
         lblPswd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
         lblPswd.setForeground(new java.awt.Color(48, 53, 57));
         lblPswd.setText("Password:");
 
-        Pswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        Pswd.setBorder(null);
 
         btnCreateAcc.setBackground(new java.awt.Color(102, 0, 0));
         btnCreateAcc.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -114,10 +117,7 @@ public class signUp extends javax.swing.JFrame {
         lblName.setForeground(new java.awt.Color(48, 53, 57));
         lblName.setText("Name:");
 
-        TfName.setHorizontalAlignment(javax.swing.JTextField.LEFT);
-        TfName.setAlignmentX(1.0F);
-        TfName.setAlignmentY(1.0F);
-        TfName.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        TfName.setBorder(null);
 
         checkPswrd.setBackground(new java.awt.Color(255, 255, 255));
         checkPswrd.setFont(new java.awt.Font("Arial Rounded MT Bold", 0, 12)); // NOI18N
@@ -130,7 +130,7 @@ public class signUp extends javax.swing.JFrame {
             }
         });
 
-        CPswd.setBorder(javax.swing.BorderFactory.createLineBorder(new java.awt.Color(0, 0, 0), 2));
+        CPswd.setBorder(null);
 
         javax.swing.GroupLayout jPanel6Layout = new javax.swing.GroupLayout(jPanel6);
         jPanel6.setLayout(jPanel6Layout);
@@ -143,13 +143,13 @@ public class signUp extends javax.swing.JFrame {
                     .addGroup(jPanel6Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                         .addComponent(TfEmail, javax.swing.GroupLayout.DEFAULT_SIZE, 370, Short.MAX_VALUE)
                         .addComponent(btnCreateAcc, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(TfName)
                         .addComponent(Pswd)
                         .addComponent(CPswd)
                         .addComponent(lblEmail)
                         .addComponent(lblName)
                         .addComponent(lblPswd)
-                        .addComponent(lblCPswd)
-                        .addComponent(TfName, javax.swing.GroupLayout.Alignment.TRAILING)))
+                        .addComponent(lblCPswd)))
                 .addContainerGap(65, Short.MAX_VALUE))
         );
         jPanel6Layout.setVerticalGroup(
@@ -172,7 +172,7 @@ public class signUp extends javax.swing.JFrame {
                 .addComponent(CPswd, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(checkPswrd)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 51, Short.MAX_VALUE)
                 .addComponent(btnCreateAcc, javax.swing.GroupLayout.PREFERRED_SIZE, 40, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );

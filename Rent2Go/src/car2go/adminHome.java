@@ -244,6 +244,9 @@ public class adminHome extends javax.swing.JFrame {
         );
 
         jPanel1.add(jPanel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(660, 283, -1, -1));
+
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\Freee\\Downloads\\CAR2GO (Presentation) (1).png")); // NOI18N
+        jLabel2.setText("jLabel2");
         jPanel1.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 980, 640));
 
         getContentPane().add(jPanel1, java.awt.BorderLayout.CENTER);
@@ -549,43 +552,43 @@ public class adminHome extends javax.swing.JFrame {
     }//GEN-LAST:event_logoMouseClicked
 
     private void jPanel4MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseEntered
-        jPanel4.setBackground(new Color(102, 102, 102));
+        jPanel4.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel4MouseEntered
 
     private void jPanel4MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel4MouseExited
-        jPanel4.setBackground(new Color(0, 0, 0));
+        jPanel4.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel4MouseExited
 
     private void jPanel5MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseEntered
-        jPanel5.setBackground(new Color(102, 102, 102));
+        jPanel5.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel5MouseEntered
 
     private void jPanel5MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel5MouseExited
-        jPanel5.setBackground(new Color(0, 0, 0));
+        jPanel5.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel5MouseExited
 
     private void jPanel6MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseEntered
-        jPanel6.setBackground(new Color(102, 102, 102));
+        jPanel6.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel6MouseEntered
 
     private void jPanel6MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel6MouseExited
-        jPanel6.setBackground(new Color(0, 0, 0));
+        jPanel6.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel6MouseExited
 
     private void jPanel7MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseEntered
-        jPanel7.setBackground(new Color(102, 102, 102));
+        jPanel7.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel7MouseEntered
 
     private void jPanel7MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel7MouseExited
-        jPanel7.setBackground(new Color(0, 0, 0));
+        jPanel7.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel7MouseExited
 
     private void jPanel8MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseEntered
-        jPanel8.setBackground(new Color(102, 102, 102));
+        jPanel8.setBackground(new Color(255, 204, 0));
     }//GEN-LAST:event_jPanel8MouseEntered
 
     private void jPanel8MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jPanel8MouseExited
-        jPanel8.setBackground(new Color(0, 0, 0));
+        jPanel8.setBackground(new Color(255, 229, 86));
     }//GEN-LAST:event_jPanel8MouseExited
 
     private void jLabel7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel7MouseClicked
@@ -644,56 +647,56 @@ public class adminHome extends javax.swing.JFrame {
         });
     }
 
-    private void updateCounts() {
-        try {
-            // Parse the JSON file
-            JSONParser parser = new JSONParser();
-
-            // Path to the JSON file - consider using relative paths
-            String jsonFilePath = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
-
-            try (FileReader reader = new FileReader(jsonFilePath)) {
-                JSONObject jsonObject = (JSONObject) parser.parse(reader);
-
-                // Get "cars" array from JSON
-                JSONArray carsArray = (JSONArray) jsonObject.get("cars");
-                lblCars.setText(String.valueOf(carsArray.size()));
-
-                // Get "users" array from JSON
-                JSONArray usersArray = (JSONArray) jsonObject.get("users");
-                lblUsers.setText(String.valueOf(usersArray.size()));
-
-                // Get "bookings" array from JSON and count active bookings
-                JSONArray bookingsArray = (JSONArray) jsonObject.get("bookings");
-                int activeBookings = 0;
-
-                for (Object obj : bookingsArray) {
-                    JSONObject booking = (JSONObject) obj;
-                    String status = (String) booking.get("status");
-                    if ("Booked".equalsIgnoreCase(status)) {
-                        activeBookings++;
-                    }
+  private void updateCounts() {
+    try {
+        // Parse the JSON file
+        JSONParser parser = new JSONParser();
+        
+        // Path to the JSON file - consider using relative paths
+        String jsonFilePath = "C:\\Users\\User\\Downloads\\Java-Rice-main\\Java-Rice-main\\Rent2Go\\src\\car2go\\car2go.json";
+        
+        try (FileReader reader = new FileReader(jsonFilePath)) {
+            JSONObject jsonObject = (JSONObject) parser.parse(reader);
+            
+            // Get "cars" array from JSON
+            JSONArray carsArray = (JSONArray) jsonObject.get("cars");
+            lblCars.setText(String.valueOf(carsArray.size()));
+            
+            // Get "users" array from JSON
+            JSONArray usersArray = (JSONArray) jsonObject.get("users");
+            lblUsers.setText(String.valueOf(usersArray.size()));
+            
+            // Get "bookings" array from JSON and count active bookings
+            JSONArray bookingsArray = (JSONArray) jsonObject.get("bookings");
+            int activeBookings = 0;
+            
+            for (Object obj : bookingsArray) {
+                JSONObject booking = (JSONObject) obj;
+                String status = (String) booking.get("status");
+                if ("Booked".equalsIgnoreCase(status)) {
+                    activeBookings++;
                 }
-
-                lblBooked.setText(String.valueOf(activeBookings));
-
-            } catch (Exception e) {
-                System.out.println("Error reading JSON file: " + e.getMessage());
-                e.printStackTrace();
-                // Set default values if there's an error
-                lblCars.setText("0");
-                lblUsers.setText("0");
-                lblBooked.setText("0");
             }
+            
+            lblBooked.setText(String.valueOf(activeBookings));
+            
         } catch (Exception e) {
-            System.out.println("General error: " + e.getMessage());
+            System.out.println("Error reading JSON file: " + e.getMessage());
             e.printStackTrace();
             // Set default values if there's an error
             lblCars.setText("0");
             lblUsers.setText("0");
             lblBooked.setText("0");
         }
+    } catch (Exception e) {
+        System.out.println("General error: " + e.getMessage());
+        e.printStackTrace();
+        // Set default values if there's an error
+        lblCars.setText("0");
+        lblUsers.setText("0");
+        lblBooked.setText("0");
     }
+}
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JLabel exit;
