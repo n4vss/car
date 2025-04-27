@@ -16,7 +16,7 @@ import org.json.simple.parser.JSONParser;
 public class adminBookings extends javax.swing.JFrame {
 
     private JSONObject car2goData;
-    private final String DATA_FILE = "C:\\Users\\User\\Downloads\\Rent2Go\\Rent2Go\\src\\car2go\\car2go.json";
+    private final String DATA_FILE = "C:\\Users\\User\\OneDrive\\Documents\\GitHub\\car\\Rent2Go\\src\\car2go\\car2go.json";
     private DefaultTableModel tableModel;
 
     public adminBookings() {
